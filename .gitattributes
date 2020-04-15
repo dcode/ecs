@@ -1,1 +1,13 @@
 CHANGELOG.md  merge=union
+
+# Do not display these files in a diff and accept latest copies during a merge
+code/**                -diff -merge
+docs/fields.yml        -diff -merge
+docs/field-details.yml -diff -merge
+generated/**           -diff -merge
+
+# Collapse these files by default in PRs
+code/**                linguist-generated=true
+docs/fields.yml        linguist-generated=true
+docs/field-details.yml linguist-generated=true
+generated/**           linguist-generated=true
